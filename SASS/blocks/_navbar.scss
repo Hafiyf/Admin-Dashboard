@@ -1,0 +1,64 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 61px;
+    padding: 33px 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    &__divider {
+        width: 13px;
+        height: 0px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin: 30px 0;
+    }
+
+}
+
+.menubar {
+    margin-bottom: 68px;
+}
+
+// ICONS BAR
+.iconsbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 33px;
+    transition: 0.3s;
+
+    &__btn:hover {
+        transition: 0.3s;
+        scale: 1.5;
+    }
+}
+
+
+// BW ICONS BAR
+.bwicons{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 33px;
+
+    &__D {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0.02em;
+        color: #8898AA;
+    }
+
+    &__btn:hover {
+        transition: 0.3s;
+        scale: 2;
+    }
+}
+
