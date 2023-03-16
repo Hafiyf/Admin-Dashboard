@@ -20,7 +20,7 @@
             align-items: center;
             justify-content: space-around;
 
-            img{
+            img {
                 display: block;
                 margin-left: 20px;
                 background: rgba(255, 255, 255, 0.9);
@@ -34,14 +34,47 @@
                 background: none;
                 border: none;
 
-                :focus{
+                :focus {
                     outline: none !important;
                     border: none !important;
                     box-shadow: none;
                 }
             }
         }
+
+        // searchbar end
+
+        &__actions {
+            display: flex;
+            align-items: center;
+            gap: 32px;
+
+
+        }
+
+        &__user {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            // cursor: pointer;
+
+            img {
+                display: flex;
+            }
+
+            p {
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 19px;
+                display: flex;
+                align-items: center;
+                color: rgba(255, 255, 255, 0.95);
+            }
+        }
+
     }
+
+    // hnavbar end
 
 
 }
