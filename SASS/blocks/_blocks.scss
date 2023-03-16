@@ -1,8 +1,10 @@
 @import 'visualy-hidden.scss';
-@import 'defaults.scss';  
+@import '_defaults.scss';  
 @import '_container.scss';
-@import '_main.scss';
+// @import '../main.scss';
 
 @import '_navbar.scss';
 @import '_header.scss';
+@import '_charts.scss';
+@import '_userStats.scss';
 
