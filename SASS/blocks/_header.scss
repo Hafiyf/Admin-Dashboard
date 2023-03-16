@@ -1,4 +1,47 @@
-.header{
+.header {
     height: 379px;
-    background: #5E72E4;
+    // background: #5E72E4;
+    // padding: 0 30px;
+
+
+    .hnavbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+
+        &__searchbar {
+            width: 421px;
+            height: 46px;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 23px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+
+            img{
+                display: block;
+                margin-left: 20px;
+                background: rgba(255, 255, 255, 0.9);
+
+            }
+
+            input {
+                width: 100%;
+                height: 100%;
+                border-radius: 23px;
+                background: none;
+                border: none;
+
+                :focus{
+                    outline: none !important;
+                    border: none !important;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+
+
 }
