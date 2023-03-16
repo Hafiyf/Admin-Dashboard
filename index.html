@@ -6,12 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="icon" href="./images/JohnSnow.svg" />
-    <link rel="stylesheet" href="./SASS/main..css" />
+    <link rel="stylesheet" href="./SASS/main.css" />
 
     <title>Admin Dashboard</title>
   </head>
   <body>
-
     <div class="navbar">
       <div class="menubar">
         <button class="menubar__btn">
@@ -127,38 +126,266 @@
 
     <!-- HEADER -->
     <div class="container">
-      <section class="main">
-
-        <header class="header">
-          <div class="header__navbar hnavbar">
-            <div class="hnavbar__searchbar">
-              <img src="./images/header/search.svg" alt="" />
-              <input type="text" name="search" id="search" />
-            </div>
-
-
-            <div class="hnavbar__actions">
-              <button class="hnavbar__actions-btn">
-                <img src="./images/header/notafication.svg" alt="">
-              </button>
-
-              <button class="hnavbar__actions-btn">
-                <img src="./images/header/options.svg" alt="">
-              </button>
-
-              <button class="hnavbar__user">
-                <img src="./images/header/johnSnow.svg" alt="">
-                <p>John Snow</p>
-              </button>
-            </div>
+      <header class="header">
+        <div class="header__navbar hnavbar">
+          <div class="hnavbar__searchbar">
+            <img src="./images/header/search.svg" alt="" />
+            <input type="text" name="search" id="search" placeholder="Search" />
           </div>
-<!-- navbar end -->
-<!-- 2nd navbar start -->
-          
-        </header>
+
+          <div class="hnavbar__actions">
+            <button class="hnavbar__actions-btn">
+              <img src="./images/header/notafication.svg" alt="" />
+            </button>
+
+            <button class="hnavbar__actions-btn">
+              <img src="./images/header/options.svg" alt="" />
+            </button>
+
+            <button class="hnavbar__user">
+              <img src="./images/header/johnSnow.svg" alt="" />
+              <p>John Snow</p>
+            </button>
+          </div>
+        </div>
+        <!-- navbar end -->
+        <!-- 2nd navbar start -->
+        <div class="header__folders">
+          <button class="header__folders-h4">Deafult</button>
+          <img
+            src="./images/header/Secondary-house.svg"
+            alt=""
+            class="header__folders-house"
+          />
+
+          <span>-</span>
+
+          <button class="header__folders-p">Dashboards</button>
+
+          <span>-</span>
+
+          <button class="header__folders-p">Default</button>
+        </div>
+
+        <ul class="header__stats">
+          <li class="header__stats-list">
+            <div class="header__stats-texts">
+              <h5 class="header__stats-texts__h5">TOTAL TRAFFIC</h5>
+              <p class="header__stats-texts__nums">350,897</p>
+
+              <div class="header__stats-texts__progtime progtime">
+                <p class="progtime__precent">
+                  <img src="./images/header/arrowUp-icon.svg" alt="" />
+                  <span>3.48%</span>
+                </p>
+                <p>Since last month</p>
+              </div>
+            </div>
+
+            <img
+              src="./images/header/hand-icon.svg"
+              alt=""
+              class="stats__img"
+            />
+          </li>
+
+          <li class="header__stats-list">
+            <div class="header__stats-texts">
+              <h5 class="header__stats-texts__h5">NEW USERS</h5>
+              <p class="header__stats-texts__nums">2,356</p>
+
+              <div class="header__stats-texts__progtime progtime">
+                <p class="progtime__precent">
+                  <img src="./images/header/arrowUp-icon.svg" alt="" />
+                  <span>3.48%</span>
+                </p>
+                <p>Since last month</p>
+              </div>
+            </div>
+
+            <img
+              src="./images/header/stats-icon.svg"
+              alt=""
+              class="stats__img"
+            />
+          </li>
+
+          <li class="header__stats-list">
+            <div class="header__stats-texts">
+              <h5 class="header__stats-texts__h5">SALES</h5>
+              <p class="header__stats-texts__nums">924</p>
+
+              <div class="header__stats-texts__progtime progtime">
+                <p class="progtime__precent">
+                  <img src="./images/header/arrowUp-icon.svg" alt="" />
+                  <span>3.48%</span>
+                </p>
+                <p>Since last month</p>
+              </div>
+            </div>
+
+            <img
+              src="./images/header/sales-icon.svg"
+              alt=""
+              class="stats__img"
+            />
+          </li>
+
+          <li class="header__stats-list">
+            <div class="header__stats-texts">
+              <h5 class="header__stats-texts__h5">PERFORMANCE</h5>
+              <p class="header__stats-texts__nums">49,65%</p>
+
+              <div class="header__stats-texts__progtime progtime">
+                <p class="progtime__precent">
+                  <img src="./images/header/arrowUp-icon.svg" alt="" />
+                  <span>3.48%</span>
+                </p>
+                <p>Since last month</p>
+              </div>
+            </div>
+
+            <img
+              src="./images/header/performance-icon.svg"
+              alt=""
+              class="stats__img"
+            />
+          </li>
+        </ul>
+      </header>
+      <!-- header end -->
+      <!-- charts -->
+
+      <section class="charts">
+        <img
+          src="./images/charts/Sales Value Chart.svg"
+          alt=""
+          class="img1212"
+        />
+        <img src="./images/charts/Total orders Chart.svg" alt="" />
+      </section>
+
+      <section class="userStats">
+        <div class="userStats__teamMembers teamMembers userStats__card">
+          <h3 class="teamMembers__heading userStats__heading">Team members</h3>
+
+          <span class="userStats__divider"></span>
+          <!-- members -->
+          <div class="userStats__members usMems">
 
 
+            <!-- 1st person -->
+            <div class="usMems__person">
+              <img
+                src="./images/userStats/JohnMale.svg"
+                alt=""
+                class="usMems__person-img"
+              />
+              <div class="usMems__person-text usPerson__text">
+                <p class="usPerson__text-name">John Michael</p>
+                <p class="usPerson__text-online">
+                  <span class="online-indicator"></span>
+                  Online
+                </p>
+              </div>
+
+              <button class="usMems__person-btn">Add</button>
+            </div>
+
+            <span usMems__divider></span>
+            <!-- 1st person end -->
+
+            <!-- 2nd person -->
+            <div class="usMems__person">
+              <img
+                src="./images/userStats/AlexSmith.svg"
+                alt=""
+                class="usMems__person-img"
+              />
+              <div class="usMems__person-text usPerson__text">
+                <p class="usPerson__text-name">Alex Smith</p>
+                <p class="usPerson__text-online">
+                  <span class="meeting-indicator"></span>
+                  In a meeting
+                </p>
+              </div>
+
+              <button class="usMems__person-btn">Add</button>
+            </div>
+
+            <span usMems__divider></span>
+            <!-- 2nd person end -->
+
+            <!-- 3rd person -->
+            <div class="usMems__person">
+              <img
+                src="./images/userStats/Samantha.svg"
+                alt=""
+                class="usMems__person-img"
+              />
+              <div class="usMems__person-text usPerson__text">
+                <p class="usPerson__text-name">Samantha Ivy</p>
+                <p class="usPerson__text-online">
+                  <span class="offline-indicator"></span>
+                  Offline
+                </p>
+              </div>
+
+              <button class="usMems__person-btn">Add</button>
+            </div>
+
+            <span usMems__divider></span>
+            <!-- 3rd person end -->
+
+            <!-- 4th person -->
+            <div class="usMems__person">
+              <img
+                src="./images/userStats/JohnFemale.svg"
+                alt=""
+                class="usMems__person-img"
+              />
+              <div class="usMems__person-text usPerson__text">
+                <p class="usPerson__text-name">John Michael</p>
+                <p class="usPerson__text-online">
+                  <span class="online-indicator"></span>
+                  Online
+                </p>
+              </div>
+
+              <button class="usMems__person-btn">Add</button>
+            </div>
+
+            <span usMems__divider></span>
+            <!-- 4th person end -->
+          </div>
+          <!-- members end -->
+        </div>
+
+<!-- 2 CARD -->
+        <div class="userStats__todo userStats__card">
+          <h3 class="teamMembers__heading userStats__heading">To do list</h3>
+          <span class="userStats__divider"></span>
+
+          <div class="todo">
+            <span class="todo__liner"></span>
+            <div class="todo__text">
+              <p class="todo__task">Call with Dave</p>
+              <p class="todo__hour">10:30 AM</p>
+            </div>
+            <label class="todo__btn">
+              <input type="checkbox">
+              <span class="todo__checkmark"></span>
+            </label>
+          </div>
+
+        </div>
+
+<!-- 3 CARD -->
+        <div class="userStats__progress userStats__card">
+
+        </div>
       </section>
     </div>
   </body>
+  <script src="./JavaScript/main.js"></script>
 </html>
