@@ -153,6 +153,7 @@
 
 //usMems__person
 
+
 .todo {
     width: 100%;
     height: 43px;
@@ -160,11 +161,32 @@
     align-items: center;
     padding: 24px;
 
+    // .todo__item{
+
+    //     display: flex;
+    //     align-items: center;
+    //     padding: 24px;
+    // }
+
+
+
     &__liner {
         width: 3px;
         height: 43px;
         display: block;
         background: #2DCE89;
+
+        &-orange {
+            background: #FB6340;
+        }
+
+        &-blue{
+            background: #11CDEF;
+        }
+
+        &-red{
+            background: #F5365C;
+        }
     }
 
     &__text {
@@ -178,9 +200,13 @@
         font-weight: 600;
         font-size: 13px;
         line-height: 18px;
-        text-decoration-line: line-through;
 
         color: #32325D;
+
+        &-done {
+            text-decoration-line: line-through;
+
+        }
     }
 
     &__hour {
@@ -189,69 +215,18 @@
         font-weight: 400;
         font-size: 13px;
         line-height: 18px;
-        text-decoration-line: line-through;
         color: #525F7F;
 
-    }
+        &-done{
+        text-decoration-line: line-through;
 
-    &__btn {
-        position: absolute;
-        opacity: 0;
-        cursor: pointer;
-        height: 0;
-        width: 0;
-
-        &:hover input~.todo__checkmark {
-            background-color: #ccc;
-        }
-
-        & input:checked~.checkmark {
-            background-color: #2196F3;
-        }
-
-        & input:checked~.checkmark:after {
-            display: block;
-        }
-
-        & .todo__checkmark:after {
-            left: 9px;
-            top: 5px;
-            width: 5px;
-            height: 10px;
-            border: solid white;
-            border-width: 0 3px 3px 0;
-            -webkit-transform: rotate(45deg);
-            -ms-transform: rotate(45deg);
-            transform: rotate(45deg);
         }
     }
 
-    &__checkmark:after {
-        content: "";
-        position: absolute;
-        display: none;
-    }
 
-    &__checkmark {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 25px;
-        width: 25px;
-        background-color: #eee;
-    }
 
-    // &__btn input:checked ~ .todo__checkmark{
-    //     width: 100%;
-    //     height: 100%;
-    //     display: block;
-    //     background: #2DCE89;
-    // }
-    // &__btn input:checked ~ .checkmark:after {
-    //     display: block;
-    //     background: #2DCE89;
 
-    //   }
+
 
 
 
